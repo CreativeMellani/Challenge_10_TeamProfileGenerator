@@ -5,6 +5,23 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+// Constructor function which can be used to create objects containing the properties
+// Following the format from Day 1, Activity 1
+function Roles (employee, engineer, intern, manager) {
+    this.employee = employee;
+    this.engineer = engineer;
+    this.intern = intern;
+    this.manager = manager;
+    
+    this.makeNoise = () => {
+      if (this.raining === true) {
+        console.log(this.noise);
+      }
+    };
+  }
+
+
+
 
  //Creating  an array of questions for user to input for employee information
 inquirer
