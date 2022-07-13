@@ -32,15 +32,13 @@ inquirer
   }
 
 
-
-
 ])
 .then((answers) => {
   // Use user feedback for... whatever!!
   
-  const readmeMD = `${answers.firstname}  ${answers.lastName} employee number is ${answers.ID} your employee email is ${answers.email} and your role is ${ansers.role}`;
+  const employeeInfo = `${answers.firstname}  ${answers.lastName} employee number is ${answers.ID} your employee email is ${answers.email} and your role is ${ansers.role}`;
   
-  console.log(readmeMD)
+  console.log(employeeInfo)
 
   // TODO: Create a function to write README file
   
